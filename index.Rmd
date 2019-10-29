@@ -1,13 +1,8 @@
 ---
-title: "Holy cow!"
+title: "Simulations in Data Science- Applications and Implications"
 ---
 
-### I have a webpage!
-
-And I can put all kinds of stuff on it!
-Simulations in Data Science- Applications and Implications 
-
-Ever since my datascience 1 course covered the topic of simulations in data I’ve been thinking about the implications and applications of this tool.  We were taught to use simulations as a means of control, or verification of the validity of a dataset. The way we were taught to do so was through using a code block such as:
+Ever since my Datascience 1 course covered the topic of simulations in data I’ve been thinking about the implications and applications of this tool.  We were taught to use simulations as a means of control, or verification of the validity of a dataset. The way we were taught to do so was through using a code block such as:
 ```{r}
 library(mdsr)
 library(tidyr)
