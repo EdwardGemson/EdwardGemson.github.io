@@ -12,7 +12,7 @@
 
 
 
-<title>Holy cow!</title>
+<title>Simulations in Data Science- Applications and Implications</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,8 +32,6 @@
     background-color: white;
   }
 </style>
-
-<div class="syntaxhighlighter r"> </div>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -282,16 +280,19 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">
+  <a href="mailto:edg4001@med.cornell.edu">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://github.com/&lt;YOUR_GH_NAME&gt;/">
+  <a href="http://github.com/edwardgemson/">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
+</li>
+<li>
+  <a href="index.html">Blog Post</a>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -302,15 +303,44 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Holy cow!</h1>
+<h1 class="title toc-ignore">Simulations in Data Science- Applications and Implications</h1>
 
 </div>
 
 
-<div id="i-have-a-webpage" class="section level3">
-<h3>I have a webpage!</h3>
-<p>And I can put all kinds of stuff on it!</p>
-</div>
+<p>Ever since my Datascience 1 course covered the topic of simulations in data I’ve been thinking about the implications and applications of this tool. We were taught to use simulations as a means of control, or verification of the validity of a dataset. The way we were taught to do so was through using a code block such as:</p>
+<pre class="r"><code>library(mdsr)
+library(tidyr)</code></pre>
+<pre class="r"><code>uniform &lt;- data.frame(u = runif(1000))
+ggplot(uniform, aes(x = u)) +
+geom_histogram()</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Which prints a histogram of a random dataframe of 1000 values. Taking a step deeper, we looked at restaurants and sanitation grades across New York City using the Violations package in R. Dr. Sweeney’s theory was that restaurants close to the cutoff between A and B, for example, would be more likely to receive A’s as a result of some underlying confound.</p>
+<p>While you would expect there to be a normal distribution of scores across the grades for restaurant violations, there seems to be a cluster slightly above the benchmarks for grades (i.e. restaurants with 7 violations receive an A, while those with 8 or more receive a B). We looked at what a normal distribution of scores would look like through using simulations, and then comparing the actual values to the “expected” or simulated in the following code block:</p>
+<pre class="r"><code>#setup to isolate the scores
+minval &lt;- 7
+maxval &lt;- 19
+JustScores &lt;- Violations %&gt;%
+filter(score &gt;= minval &amp; score &lt;= maxval)%&gt;%
+select(dba, score) %&gt;%
+unique()
+#creating the simulation
+scores &lt;- tally(~score, data = JustScores)
+RandomFlip &lt;- do(1000) * rflip(scores[&quot;13&quot;] + scores[&quot;14&quot;])
+#plotting the simulated data vs actual
+g &lt;- ggplot(data = RandomFlip, aes(x = heads)) +
+geom_histogram(binwidth = 5) +
+xlim(c(2100, NA)) +
+geom_vline(xintercept = scores[&quot;14&quot;], col = &#39;red&#39;, size = 2) +
+annotate(&quot;text&quot;, x = 2137, y = 45, label = &#39;observed&#39;, hjust = &#39;left&#39;) +
+xlab(&quot;Number of restaurants with scores of 14 (if equal probability)&quot;)
+g</code></pre>
+<pre><code>## Warning: Removed 1 rows containing missing values (geom_bar).</code></pre>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>We found that there is a huge discrepancy in the number of A’s and B’s in the simulated dataset, when compared with the real one. This application of simulations seems promising, but to me the most interesting application of simulations is in understanding trends, specifically ones that humans have trouble tracking, in data.</p>
+<p>From my limited experience a lot of the job of a biostatistician is to walk the tightrope between data that is poor, and cannot be salvaged, and data that can be framed in a way that it becomes statistically significant. Simulations in my mind narrow this gap. If you are able to compensate for missing values, for example, through replicating the “paths” a dataset without missing values would take, and then to make an educated guess on what the actual dataset would look like, you can turn a flawed, sloppy, hole-filled research project into a statistically significant and seemingly valid study.</p>
+<p>I don’t have a strong understanding of where the lines are in this type of research, but I hope that ethical considerations prevent this from happening in excess.</p>
 
 
 

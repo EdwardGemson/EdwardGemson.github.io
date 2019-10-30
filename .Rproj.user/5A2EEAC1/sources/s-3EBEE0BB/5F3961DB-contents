@@ -3,14 +3,18 @@ title: "Simulations in Data Science- Applications and Implications"
 ---
 
 Ever since my Datascience 1 course covered the topic of simulations in data I’ve been thinking about the implications and applications of this tool.  We were taught to use simulations as a means of control, or verification of the validity of a dataset. The way we were taught to do so was through using a code block such as:
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(mdsr)
 library(tidyr)
+library(ggplot2)
+```
 
+```{r}
 uniform <- data.frame(u = runif(1000))
 ggplot(uniform, aes(x = u)) +
 geom_histogram()
 ```
+
 Which prints a histogram of a random dataframe of 1000 values. Taking a step deeper, we looked at restaurants and sanitation grades across New York City using the Violations package in R. Dr. Sweeney’s theory was that restaurants close to the cutoff between A and B, for example, would be more likely to receive A’s as a result of some underlying confound. 
 
 While you would expect there to be a normal distribution of scores across the grades for restaurant violations, there seems to be a cluster slightly above the benchmarks for grades (i.e. restaurants with 7 violations receive an A, while those with 8 or more receive a B). We looked at what a normal distribution of scores would look like through using simulations, and then comparing the actual values to the “expected” or simulated in the following code block:
@@ -34,3 +38,9 @@ annotate("text", x = 2137, y = 45, label = 'observed', hjust = 'left') +
 xlab("Number of restaurants with scores of 14 (if equal probability)")
 g
 ```
+
+We found that there is a huge discrepancy in the number of A’s and B’s in the simulated dataset, when compared with the real one. This application of simulations seems promising, but to me the most interesting application of simulations is in understanding trends, specifically ones that humans have trouble tracking, in data.
+
+From my limited experience a lot of the job of a biostatistician is to walk the tightrope between data that is poor, and cannot be salvaged, and data that can be framed in a way that it becomes statistically significant. Simulations in my mind narrow this gap. If you are able to compensate for missing values, for example, through replicating the “paths” a dataset without missing values would take, and then to make an educated guess on what the actual dataset would look like, you can turn a flawed, sloppy, hole-filled research project into a statistically significant and seemingly valid study. 
+
+I don’t have a strong understanding of where the lines are in this type of research, but I hope that ethical considerations prevent this from happening in excess. 
