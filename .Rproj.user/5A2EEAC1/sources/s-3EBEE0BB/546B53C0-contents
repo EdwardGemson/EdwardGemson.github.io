@@ -294,6 +294,9 @@ $(document).ready(function () {
 <li>
   <a href="index.html">Blog Post</a>
 </li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->

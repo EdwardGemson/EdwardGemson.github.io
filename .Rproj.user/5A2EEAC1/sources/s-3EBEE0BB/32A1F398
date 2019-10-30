@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572444710086.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2496738490",
+    "id" : "32A1F398",
+    "lastKnownWriteTime" : 1572444810,
+    "last_content_update" : 1572444810120,
+    "path" : "~/Documents/Personal/DS1/edwardgemson.github.io/resume.Rmd",
+    "project_path" : "resume.Rmd",
+    "properties" : {
+        "cursorPosition" : "59,0",
+        "scrollLine" : "44"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -11,5 +11,7 @@ navbar:
       href: http://github.com/edwardgemson/
     - text: "Blog Post"
       href: index.html
+    - text: "Resume"
+      href: resume.html
 output:
   html_document

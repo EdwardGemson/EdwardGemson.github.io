@@ -12,7 +12,7 @@
 
 
 
-<title>Simulations in Data Science- Applications and Implications</title>
+<title>About</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -306,47 +306,14 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Simulations in Data Science- Applications and Implications</h1>
+<h1 class="title toc-ignore">About</h1>
 
 </div>
 
 
-<p>Ever since my Datascience 1 course covered the topic of simulations in data I’ve been thinking about the implications and applications of this tool. We were taught to use simulations as a means of control, or verification of the validity of a dataset. The way we were taught to do so was through using a code block such as:</p>
-<pre class="r"><code>library(mdsr)
-library(tidyr)
-library(ggplot2)</code></pre>
-<pre class="r"><code>uniform &lt;- data.frame(u = runif(1000))
-ggplot(uniform, aes(x = u)) +
-geom_histogram()</code></pre>
-<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>Which prints a histogram of a random dataframe of 1000 values. Taking a step deeper, we looked at restaurants and sanitation grades across New York City using the Violations package in R. Dr. Sweeney’s theory was that restaurants close to the cutoff between A and B, for example, would be more likely to receive A’s as a result of some underlying (and potentially malicious) confound.</p>
-<p>While you would expect there to be a normal distribution of scores across the grades for restaurant violations, there seems to be a cluster slightly above the benchmarks for grades (i.e. there are significantly more restaurants with the lowest A score, than the highest B score). We looked at what a normal distribution of scores would look like using simulations, and then compared the actual values to the “expected” or simulated in the following code block:</p>
-<pre class="r"><code>#setup to isolate the scores
-minval &lt;- 7
-maxval &lt;- 19
-JustScores &lt;- Violations %&gt;%
-filter(score &gt;= minval &amp; score &lt;= maxval)%&gt;%
-select(dba, score) %&gt;%
-unique()
-#creating the simulation
-scores &lt;- tally(~score, data = JustScores)
-RandomFlip &lt;- do(1000) * rflip(scores[&quot;13&quot;] + scores[&quot;14&quot;])
-#plotting the simulated data vs actual
-g &lt;- ggplot(data = RandomFlip, aes(x = heads)) +
-geom_histogram(binwidth = 5) +
-xlim(c(2100, NA)) +
-geom_vline(xintercept = scores[&quot;14&quot;], col = &#39;red&#39;, size = 2) +
-annotate(&quot;text&quot;, x = 2137, y = 45, label = &#39;observed&#39;, hjust = &#39;left&#39;) +
-xlab(&quot;Number of restaurants with scores of 14 (if equal probability)&quot;)
-g</code></pre>
-<pre><code>## Warning: Removed 1 rows containing missing values (geom_bar).</code></pre>
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>We found that there is a huge discrepancy in the number of A’s and B’s in the simulated dataset, when compared with the real one. This application of simulations seems promising, but to me the most interesting application of simulations is in understanding trends, specifically ones that humans have trouble tracking, in data.</p>
-<p>From my limited experience a lot of the job of a biostatistician is to walk the tightrope between data that is poor, and cannot be salvaged, and data that can be framed in a way that it becomes statistically significant. Simulations in my mind narrow this gap. If you are able to compensate for missing values, for example, through replicating the “paths” a dataset without missing values would take, and then to make an educated guess on what the actual dataset would look like, you can turn a flawed, sloppy, hole-filled research project into a statistically significant and seemingly valid study.</p>
-<p>I don’t have a strong understanding of where the lines are in this type of research, but I hope that ethical (and legal) considerations prevent this from happening in excess. In my work as a research assistant with the INSIGHT Network I’ve seen first hand how highly researchers prioritize significant results. I hope to learn more, both about uses and optimizations for simulations in data, and in the infrastructure in place to hold poor data accountable.</p>
-<p>Scientific research is a field that I’m passionate about, but throughout my experiences in research I’ve heard and seen many stories regarding steps taken to avoid the repercussions of insignificant findings. I’ve had researchers tell me that another researcher’s findings couldn’t be used or studied because they were prone to fabricating results. I’ve been asked to work on interim reports for clinical trials that hadn’t started. I attribute the lack of accountability in scientific research, in part due to the complexity and difficulty in reproducing mechanistic studies, and in part due to poor processes in peer review and analysis, to one of the main reasons why we know so little about the etiology of so many diseases. We’ve known about Alzheimer’s disease since the 1970’s and are nowhere near understanding it’s root cause. Mental disorders, cancers, and many, many more widespread and debilitating diseases that have wrought havoc on our society are poorly understood because of these systemic issues. The question becomes one of responsibility in multiple different lights: Who is or should be responsible for validating results? Who is responsible for analysis? Who is responsible for unmasking attempts at hiding poor practices? Who is responsible for repeating research? Who is responsible for paying for studies to confirm results? Who is responsible for dissemination? Who is responsible for linking similar studies and prompting subsequent work into important areas?</p>
-<p>These are questions that to me don’t currently have answers in the field of scientific research. There are pockets or echo chambers where systems are in place that answer some or many of them, but there is no standardized enforcement agency in Alzheimer’s research. There is no “study replicating team” in cancer research. This is a crucially unmet need in the realm of scientific research, and one that I think biostatisticians can use statistical literacy to play an active role in filling, but who is responsible for telling them to do so?</p>
+<p>EDWARD GEMSON 263 1st Street, Hoboken, NJ 07030 Cell: 917-744-6204 - <a href="mailto:Edwardgemson@gmail.com" class="email">Edwardgemson@gmail.com</a> PROFESSIONAL SUMMARY Research Assistant currently pursuing masters degree in biostatistics, seeking to continue clinical experience in patient treatment across neurological and behavioral disorders. Adept in conducting interviews, literature reviews and data synthesis and analysis. Skilled in creating efficient systems to organize and manage experimental data. SKILLS • Patient history understanding • Clinical support • HIPPA compliance • Professional bedside manner • Statistical analysis • Southern blotting • Proficient in PCR • Hospice and palliative care experience WORK HISTORY 10/2018- Current Research Assistant Weill Cornell Medical College- New York, NY • Grant writer</p>
+<p>06/2018 to 09/2018<br />
+Grant Writer New York University Center for Latino Adolescent Family Health – New York, NY • Submitted grant proposals to the OAH and ACF for funding clinical research studies for underprivileged youth in the South Bronx. • Worked closely with PI and director Dr. Guilamo-Ramos to write funding proposals under his direction. • Wrote articles for news sites with comprehensive responses to controversial topics based in research and the opinions of NYU. • Designed and drafted powerpoint presentations for talks on accepted papers • Excel and SPSS data entry and analysis 03/2016 to 12/2016 Medical Scribe ScribeAmerica – New York, NY • Documented complete information about examinations, treatment plans, lab results and other details directly into charts. • Stayed on top of current patient loads to facilitate efficient and organized workflow. • Submitted orders for additional tests and examinations. • Accompanied physicians through the day in fast-paced, stressful environments. • Reviewed records, paperwork and orders for errors and resolved issues with minimal direction. 01/2015 to 12/2015 Research Assistant Skidmore College – Saratoga Springs, NY • Worked with Professor Possidente and Dr. Drake to develop a mechanism for testing the epigenetic effect of lead poisoning on fruit flies over multiple generations. • Treated thousands of fruit flies with lead and gathered organized and cohesive data on its effects for submission to academic journals. 09/2013 to 03/2014 Research Assistant Skidmore College – Saratoga Springs, NY • Worked with Professor Lopez and research team to develop a grant proposal to research the effects of cannabidiol on epileptic rodents. • Coordinated with biological breeding companies to purchase genetically modified mice with a predisposition to epilepsy, and administered agents to induce seizures. • Tracked the effect of cannabidiol on mice’s seizures, gathering significant data and controlling for confounds 06/2012 to 09/2012 Volunteer Long Island Jewish Medical Center – Queens County, NY • Administered Mini Mental State Health Examinations to patients in Geriatric Ward • Shadowed Dr. Koppel’s daily tasks, including medication administration and Alzheimer’s research focused on Tau production in rodents • Visited patients in nursing home and assisted staff in updating medication regimen 06/2011 to 09/2011 Research Assistant Columbia Presbyterian Medical Center – New York, NY • Performed PCR analysis on Alzheimer’s patient blood samples • Assisted in organization and storage of samples EDUCATION 2016 Bachelor of Arts: Neuroscience Skidmore College - Saratoga Springs, NY</p>
 
 
 
