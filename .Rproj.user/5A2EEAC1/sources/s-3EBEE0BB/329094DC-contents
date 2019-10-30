@@ -315,10 +315,6 @@ $(document).ready(function () {
 
 
 <p>This site was created in support of the Datascience 1 course at Weill Cornell Medicine by Edward Gemson.</p>
-<div class="figure">
-<img src="i-heart-stats.jpg" alt="A stat loving website!" />
-<p class="caption">A stat loving website!</p>
-</div>
 
 
 
