@@ -3,14 +3,14 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
-      href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:edg4001@med.cornell.edu
     - icon: fa-github fa-lg
       href: http://github.com/edwardgemson/
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/edwardgemson
     - text: "Blog Post"
-      href: index.html
+      href: blog.html
     - text: "Resume"
       href: resume.html
 output:

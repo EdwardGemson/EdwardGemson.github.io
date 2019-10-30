@@ -277,9 +277,6 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">About</a>
-</li>
-<li>
   <a href="mailto:edg4001@med.cornell.edu">
     <span class="fa fa-envelope fa-lg"></span>
      
@@ -292,7 +289,13 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="index.html">Blog Post</a>
+  <a href="https://twitter.com/edwardgemson">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="blog.html">Blog Post</a>
 </li>
 <li>
   <a href="resume.html">Resume</a>
@@ -311,9 +314,12 @@ $(document).ready(function () {
 </div>
 
 
-<p>EDWARD GEMSON 263 1st Street, Hoboken, NJ 07030 Cell: 917-744-6204 - <a href="mailto:Edwardgemson@gmail.com" class="email">Edwardgemson@gmail.com</a> PROFESSIONAL SUMMARY Research Assistant currently pursuing masters degree in biostatistics, seeking to continue clinical experience in patient treatment across neurological and behavioral disorders. Adept in conducting interviews, literature reviews and data synthesis and analysis. Skilled in creating efficient systems to organize and manage experimental data. SKILLS • Patient history understanding • Clinical support • HIPPA compliance • Professional bedside manner • Statistical analysis • Southern blotting • Proficient in PCR • Hospice and palliative care experience WORK HISTORY 10/2018- Current Research Assistant Weill Cornell Medical College- New York, NY • Grant writer</p>
+<p>EDWARD GEMSON 263 1st Street, Hoboken, NJ 07030 Cell: 917-744-6204 - <a href="mailto:Edwardgemson@gmail.com" class="email">Edwardgemson@gmail.com</a> PROFESSIONAL SUMMARY Research Assistant currently pursuing masters degree in biostatistics, seeking to continue clinical experience in patient treatment across neurological and behavioral disorders. Adept in conducting interviews, literature reviews and data synthesis and analysis. Skilled in creating efficient systems to organize and manage experimental data.</p>
+<p>SKILLS • Patient history understanding • Clinical support • HIPPA compliance • Professional bedside manner • Statistical analysis • Southern blotting • Proficient in PCR • Hospice and palliative care experience</p>
+<p>WORK HISTORY 10/2018- Current Research Assistant Weill Cornell Medical College- New York, NY • Grant writer</p>
 <p>06/2018 to 09/2018<br />
-Grant Writer New York University Center for Latino Adolescent Family Health – New York, NY • Submitted grant proposals to the OAH and ACF for funding clinical research studies for underprivileged youth in the South Bronx. • Worked closely with PI and director Dr. Guilamo-Ramos to write funding proposals under his direction. • Wrote articles for news sites with comprehensive responses to controversial topics based in research and the opinions of NYU. • Designed and drafted powerpoint presentations for talks on accepted papers • Excel and SPSS data entry and analysis 03/2016 to 12/2016 Medical Scribe ScribeAmerica – New York, NY • Documented complete information about examinations, treatment plans, lab results and other details directly into charts. • Stayed on top of current patient loads to facilitate efficient and organized workflow. • Submitted orders for additional tests and examinations. • Accompanied physicians through the day in fast-paced, stressful environments. • Reviewed records, paperwork and orders for errors and resolved issues with minimal direction. 01/2015 to 12/2015 Research Assistant Skidmore College – Saratoga Springs, NY • Worked with Professor Possidente and Dr. Drake to develop a mechanism for testing the epigenetic effect of lead poisoning on fruit flies over multiple generations. • Treated thousands of fruit flies with lead and gathered organized and cohesive data on its effects for submission to academic journals. 09/2013 to 03/2014 Research Assistant Skidmore College – Saratoga Springs, NY • Worked with Professor Lopez and research team to develop a grant proposal to research the effects of cannabidiol on epileptic rodents. • Coordinated with biological breeding companies to purchase genetically modified mice with a predisposition to epilepsy, and administered agents to induce seizures. • Tracked the effect of cannabidiol on mice’s seizures, gathering significant data and controlling for confounds 06/2012 to 09/2012 Volunteer Long Island Jewish Medical Center – Queens County, NY • Administered Mini Mental State Health Examinations to patients in Geriatric Ward • Shadowed Dr. Koppel’s daily tasks, including medication administration and Alzheimer’s research focused on Tau production in rodents • Visited patients in nursing home and assisted staff in updating medication regimen 06/2011 to 09/2011 Research Assistant Columbia Presbyterian Medical Center – New York, NY • Performed PCR analysis on Alzheimer’s patient blood samples • Assisted in organization and storage of samples EDUCATION 2016 Bachelor of Arts: Neuroscience Skidmore College - Saratoga Springs, NY</p>
+Grant Writer New York University Center for Latino Adolescent Family Health – New York, NY • Submitted grant proposals to the OAH and ACF for funding clinical research studies for underprivileged youth in the South Bronx. • Worked closely with PI and director Dr. Guilamo-Ramos to write funding proposals under his direction. • Wrote articles for news sites with comprehensive responses to controversial topics based in research and the opinions of NYU. • Designed and drafted powerpoint presentations for talks on accepted papers • Excel and SPSS data entry and analysis 03/2016 to 12/2016 Medical Scribe ScribeAmerica – New York, NY • Documented complete information about examinations, treatment plans, lab results and other details directly into charts. • Stayed on top of current patient loads to facilitate efficient and organized workflow. • Submitted orders for additional tests and examinations. • Accompanied physicians through the day in fast-paced, stressful environments. • Reviewed records, paperwork and orders for errors and resolved issues with minimal direction. 01/2015 to 12/2015 Research Assistant Skidmore College – Saratoga Springs, NY • Worked with Professor Possidente and Dr. Drake to develop a mechanism for testing the epigenetic effect of lead poisoning on fruit flies over multiple generations. • Treated thousands of fruit flies with lead and gathered organized and cohesive data on its effects for submission to academic journals. 09/2013 to 03/2014 Research Assistant Skidmore College – Saratoga Springs, NY • Worked with Professor Lopez and research team to develop a grant proposal to research the effects of cannabidiol on epileptic rodents. • Coordinated with biological breeding companies to purchase genetically modified mice with a predisposition to epilepsy, and administered agents to induce seizures. • Tracked the effect of cannabidiol on mice’s seizures, gathering significant data and controlling for confounds 06/2012 to 09/2012 Volunteer Long Island Jewish Medical Center – Queens County, NY • Administered Mini Mental State Health Examinations to patients in Geriatric Ward • Shadowed Dr. Koppel’s daily tasks, including medication administration and Alzheimer’s research focused on Tau production in rodents • Visited patients in nursing home and assisted staff in updating medication regimen 06/2011 to 09/2011 Research Assistant Columbia Presbyterian Medical Center – New York, NY • Performed PCR analysis on Alzheimer’s patient blood samples • Assisted in organization and storage of samples</p>
+<p>EDUCATION 2016 Bachelor of Arts: Neuroscience Skidmore College - Saratoga Springs, NY</p>
 
 
 

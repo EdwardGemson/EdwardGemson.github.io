@@ -1,7 +1,0 @@
----
-title: "About"
----
-
-### About this site
-
-This site was created in support of the Datascience 1 course at Weill Cornell Medicine by Edward Gemson. 
